@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enock Mulenga | Data Scientist</title>
+  <meta name="description" content="Enock Mulenga: Data Scientist with healthcare and data engineering experience. Portfolio of machine learning, MLOps and data engineering projects.">
+  <style>
+    :root {
+      --bg: #fbfbf9; --surface: #ffffff; --text: #1c1f24; --muted: #5b626d;
+      --border: #e3e4e0; --accent: #1f5f8b; --accent-soft: #e6eff6;
+      --planned: #8a6d1d; --planned-bg: #f6efdc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14171b; --surface: #1b1f24; --text: #e7e9ec; --muted: #a0a7b1;
+        --border: #2c3138; --accent: #7fb4dc; --accent-soft: #1f2d3a;
+        --planned: #e0c378; --planned-bg: #2e2816;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 56px 16px 72px; }
+    header h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.01em; }
+    .role { color: var(--accent); font-weight: 600; margin: 0 0 18px; }
+    .lede { font-size: 1.08rem; max-width: 62ch; margin: 0 0 20px; }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 0; list-style: none; }
+    .links a {
+      display: inline-block; padding: 7px 14px; border: 1px solid var(--border);
+      border-radius: 6px; color: var(--text); text-decoration: none; background: var(--surface);
+    }
+    .links a:hover { border-color: var(--accent); color: var(--accent); }
+    h2 { font-size: 1.15rem; margin: 52px 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+    .card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+      padding: 16px 18px; display: flex; flex-direction: column; gap: 6px;
+    }
+    .card h3 { margin: 0; font-size: 1rem; }
+    .card p { margin: 0; color: var(--muted); font-size: 0.93rem; }
+    .tags { font-size: 0.8rem; color: var(--muted); margin-top: auto; padding-top: 6px; }
+    .status {
+      align-self: flex-start; font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.04em; padding: 2px 8px; border-radius: 4px;
+      color: var(--planned); background: var(--planned-bg);
+    }
+    ul.facts { padding-left: 20px; margin: 0; }
+    ul.facts li { margin-bottom: 6px; }
+    .note { color: var(--muted); font-size: 0.9rem; margin-top: 12px; }
+    .skills { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; margin: 0; }
+    .skills dt { font-weight: 600; }
+    .skills dd { margin: 0; color: var(--muted); }
+    @media (max-width: 560px) {
+      .skills { grid-template-columns: 1fr; }
+      .skills dd { margin-bottom: 8px; }
+      header h1 { font-size: 1.7rem; }
+    }
+    footer { margin-top: 56px; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Enock Mulenga</h1>
+      <p class="role">Data Scientist · Machine Learning · Data Engineering · MLOps</p>
+      <p class="lede">I've spent 9 years building health-information pipelines, record linkage, statistical models and decision dashboards for national health programmes. I'm now completing an MSc in Data Science and Advanced Computing at the University of Reading, UK.</p>
+      <ul class="links">
+        <li><a href="https://github.com/MulengaSnr">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/enock-mulenga-8472ba137">LinkedIn</a></li>
+      </ul>
+    </header>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card"><span class="status">Planned</span><h3>Hospital readmission risk</h3><p>Predicting 30-day readmission with calibrated models, SHAP explanations and a fairness audit.</p><div class="tags">Python · scikit-learn · XGBoost · SHAP</div></article>
+        <article class="card"><span class="status">Planned</span><h3>Readmission model in production</h3><p>The same model as a versioned, tested, monitored API.</p><div class="tags">MLflow · FastAPI · Docker · GitHub Actions · Azure</div></article>
+        <article class="card"><span class="status">Planned</span><h3>Patient record linkage pipeline</h3><p>Orchestrated deduplication and data-quality pipeline on synthetic patient records.</p><div class="tags">Airflow · PostgreSQL · Splink · Docker</div></article>
+        <article class="card"><span class="status">Planned</span><h3>UK public documents assistant</h3><p>Retrieval-augmented generation over official publications, with retrieval and groundedness evaluation.</p><div class="tags">LLMs · embeddings · vector search · FastAPI</div></article>
+        <article class="card"><span class="status">Planned</span><h3>NHS demand forecasting</h3><p>Forecasting service demand from published NHS statistics, with honest backtesting.</p><div class="tags">Time series · statsmodels · Streamlit</div></article>
+        <article class="card"><span class="status">Planned</span><h3>Policy impact evaluation</h3><p>Estimating the effect of a public policy with causal-inference methods.</p><div class="tags">Difference-in-differences · Python · R</div></article>
+        <article class="card"><span class="status">Planned</span><h3>Credit risk scorecard</h3><p>Probability-of-default modelling with calibration and fair-lending checks.</p><div class="tags">Logistic regression · gradient boosting</div></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional highlights</h2>
+      <ul class="facts">
+        <li>Analysed 230M+ medical records for health-programme intervention reports.</li>
+        <li>Designed a Python and Airflow pipeline loading 1M+ clinical records nightly.</li>
+        <li>Improved patient-record deduplication accuracy to 99.8% across 1,600+ facilities.</li>
+        <li>Consolidated three legacy databases into PostgreSQL, cutting query times from 90 s to 5 s.</li>
+        <li>Replaced an enterprise data-profiling tool with open-source Python, saving $100K+ in licensing costs.</li>
+      </ul>
+      <p class="note">That work used confidential health data and isn't public. The portfolio projects use only public or synthetic data.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <dl class="skills">
+        <dt>Languages</dt><dd>Python, R, SQL, STATA</dd>
+        <dt>ML and statistics</dt><dd>scikit-learn, XGBoost, SHAP, statsmodels, regression, predictive modelling</dd>
+        <dt>Data engineering</dt><dd>Apache Airflow, PostgreSQL, SQL Server, ETL/ELT, data quality, record linkage</dd>
+        <dt>MLOps and cloud</dt><dd>Docker, MLflow, GitHub Actions, AWS, Azure</dd>
+        <dt>BI</dt><dd>Power BI (DAX, Power Query), Apache Superset, Plotly</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul class="facts">
+        <li>MSc Data Science and Advanced Computing, University of Reading (in progress)</li>
+        <li>MSc Economics and Finance, University of Lusaka</li>
+        <li>BA Development Studies and Economics, University of Zambia</li>
+        <li>Mandela Washington Fellow</li>
+      </ul>
+    </section>
+
+    <footer>© 2026 Enock Mulenga</footer>
+  </div>
+</body>
+</html>
